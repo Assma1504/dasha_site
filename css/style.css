@@ -1,0 +1,607 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #151515;
+  --orange-color: #fa7e1f;
+  --green-color: #e7fa1b;
+  --font-size-large-text: 64px;
+  --font-size-main-text: 48px;
+  --font-size-medium-text: 40px;
+  --font-size-regular-text: 24px;
+  --main-duration: 0.3s;
+  --font-family-Kablammo: "Kablammo", system-ui;
+  --font-family-Judson: "Judson", serif;
+}
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* ================================================ style for index.html ================================== */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--black-color);
+  nav {
+    width: 100%;
+    display: flex;
+    .logo {
+      img {
+        width: 150px;
+        height: 200px;
+      }
+    }
+    .nav-text {
+      flex: 1;
+      .nav-text-title {
+        h1 {
+          text-align: center;
+          text-transform: uppercase;
+          color: var(--orange-color);
+          font-size: var(--font-size-large-text);
+          font-family: var(--font-family-Kablammo);
+        }
+      }
+      .nav-text-menu {
+        ul {
+          font-family: var(--font-family-Judson);
+          list-style: none;
+          width: 100%;
+          display: flex;
+          padding: 0;
+          justify-content: space-around;
+          li {
+            a {
+              text-transform: capitalize;
+              text-decoration: none;
+              color: var(--white-color);
+              transition: all ease-in-out var(--main-duration);
+              font-size: var(--font-size-regular-text);
+              &:hover {
+                color: var(--orange-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .container {
+    margin: 0 auto;
+    width: 85%;
+    height: 100vh;
+    section.section-home {
+      .home-image {
+        text-align: center;
+        img {
+          max-width: 100%;
+        }
+      }
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      height: 100%;
+      background-image: url("../images/bg-section.jpg");
+      background-size: cover;
+      background-position: center;
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--font-size-regular-text);
+        color: var(--white-color);
+        .contact-icons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 1rem;
+          span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--black-color);
+            width: 40px;
+            height: 40px;
+            a {
+              color: var(--white-color);
+              transition: all ease-in-out var(--main-duration);
+              &.telegram-icon {
+                &:hover {
+                  color: #24a1de;
+                }
+              }
+              &.facebook-icon {
+                &:hover {
+                  color: #1877f2;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ================================================ style for product-catalog.html ================================== */
+
+section.product-catalog {
+  font-size: var(--font-size-regular-text);
+  height: 150vh;
+  .grid-gallery {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 15px;
+    .item {
+      position: relative;
+      color: white;
+      font-size: var(--font-size-regular-text);
+      .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      a {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+    .rings {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    .earrings {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+    .main {
+      grid-column: 2/3;
+      grid-row: 1 /3;
+      color: #000;
+    }
+    .brooches {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+    .accessories {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+  }
+}
+.contact-info {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: var(--font-size-regular-text);
+  color: var(--white-color);
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--black-color);
+      width: 40px;
+      height: 40px;
+      a {
+        color: var(--white-color);
+        transition: all ease-in-out var(--main-duration);
+        &.telegram-icon {
+          &:hover {
+            color: #24a1de;
+          }
+        }
+        &.facebook-icon {
+          &:hover {
+            color: #1877f2;
+          }
+        }
+      }
+    }
+  }
+}
+/* ================================================ style for products-on-the-module.html ================================== */
+
+section.products-on-the-module {
+  height: 80vh;
+  .products-module-gallery {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-regular-text);
+    .module-box {
+      width: 47%;
+      .module-box-img {
+        img {
+          width: 100%;
+          height: 280px;
+        }
+      }
+      .module-box-content {
+        .content-title {
+          color: var(--green-color);
+          span {
+            font-weight: 600;
+          }
+        }
+        .content-list {
+          color: var(--white-color);
+          span {
+            color: var(--orange-color);
+          }
+          ul {
+            li::marker {
+              color: var(--orange-color);
+            }
+          }
+        }
+      }
+    }
+  }
+  .happy-shopping {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+/* ================================================ style for author-biography.html ================================== */
+
+section.author-biography {
+  height: 80vh;
+  margin: 0 auto;
+  font-family: var(--font-family-Judson);
+  color: var(--white-color);
+  font-size: var(--font-size-regular-text);
+
+  .author-biography-content {
+    .content-body {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+      .body-image {
+        width: 50%;
+        img {
+          max-width: 80%;
+        }
+      }
+      .body-text {
+        width: 50%;
+        p {
+          margin: 0 auto;
+          span {
+            color: var(--orange-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ================================================ style for rings ================================== */
+
+section.section-rings {
+  .rings-content {
+    font-size: var(--font-size-regular-text);
+    display: flex;
+    justify-content: space-between;
+    .rings-box {
+      width: 45%;
+      .box-text {
+        .text-title {
+          h2 {
+            color: var(--green-color);
+            &.spiral {
+              margin-top: 0;
+            }
+          }
+        }
+        .text-body {
+          color: var(--white-color);
+          span {
+            color: var(--orange-color);
+          }
+          ul {
+            li::marker {
+              color: var(--orange-color);
+            }
+          }
+        }
+      }
+      .box-image {
+        .image {
+          position: relative;
+          img {
+            width: 100%;
+            max-height: 500px;
+          }
+          .image-number {
+            font-size: var(--font-size-large-text);
+            font-family: var(--font-family-Kablammo);
+            color: var(--white-color);
+            position: absolute;
+            top: 10%;
+            left: 10%;
+          }
+        }
+      }
+    }
+  }
+}
+/* ================================================ style for Earings ================================== */
+section.section-earings {
+  .earings-content {
+    display: flex;
+    justify-content: space-between;
+    .earings-box {
+      width: 45%;
+      .box-text {
+        .text-title {
+          h2 {
+            color: var(--green-color);
+            &.phonix-wings {
+              margin-top: 0;
+            }
+          }
+        }
+        .text-body {
+          color: var(--white-color);
+          span {
+            color: var(--orange-color);
+          }
+          ul {
+            li::marker {
+              color: var(--orange-color);
+            }
+          }
+        }
+      }
+      .box-image {
+        .image {
+          position: relative;
+          img {
+            width: 100%;
+            max-height: 500px;
+          }
+          .image-number {
+            font-size: var(--font-size-large-text);
+            font-family: var(--font-family-Kablammo);
+            color: var(--white-color);
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            &.wings {
+              top: 10%;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ============================================ Media queries ============================================== */
+/*====================== X-Small ==================*/
+@media (width <= 576px) {
+  body {
+    nav {
+      .logo {
+        img {
+          display: none;
+        }
+      }
+      .nav-text {
+        .nav-text-title {
+          h1 {
+            font-size: 1.5rem;
+          }
+        }
+        .nav-text-menu {
+          ul {
+            text-align: center;
+            li {
+              a {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .container {
+      width: 90%;
+      section.product-catalog {
+        .grid-gallery {
+          display: block;
+          .item {
+            text-align: center;
+            a {
+              img {
+                max-width: 85%;
+              }
+            }
+          }
+        }
+      }
+      section.products-on-the-module {
+        .products-module-gallery {
+          display: block;
+          .module-box {
+            width: 95%;
+            margin: 0 auto;
+          }
+        }
+      }
+      section.author-biography {
+        .author-biography-content {
+          .content-body {
+            display: block;
+            text-align: center;
+            .body-image {
+              width: 100%;
+              img {
+                width: 100%;
+              }
+            }
+            .body-text {
+              width: 100%;
+            }
+          }
+        }
+      }
+      section.section-rings {
+        .rings-content {
+          font-size: var(--font-size-regular-text);
+          display: block;
+          .rings-box {
+            width: 100%;
+            text-align: center;
+            .box-image {
+              .image {
+                img {
+                  width: 90%;
+                  max-height: 300px;
+                }
+              }
+            }
+          }
+        }
+      }
+      section.section-earings {
+        .earings-content {
+          display: block;
+          .earings-box {
+            width: 100%;
+            .box-image {
+              .image {
+                position: relative;
+                img {
+                  width: 100%;
+                  max-height: 500px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*====================== Small ==================*/
+@media (576px <= width <= 768px) {
+  body {
+    nav {
+      .logo {
+        img {
+          width: 100px;
+          height: 120px;
+        }
+      }
+      .nav-text {
+        .nav-text-title {
+          h1 {
+            font-size: 2rem;
+          }
+        }
+        .nav-text-menu {
+          ul {
+            text-align: center;
+            li {
+              a {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .container {
+      width: 95%;
+      section.products-on-the-module {
+        .products-module-gallery {
+          .products-module-gallery {
+            display: block;
+            .module-box {
+              width: 75%;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*====================== Medium ==================*/
+@media (768px <= width <= 992px) {
+  body {
+    nav {
+      .logo {
+        img {
+          width: 120px;
+          height: 140px;
+        }
+      }
+      .nav-text {
+        .nav-text-title {
+          h1 {
+            font-size: 2.5rem;
+          }
+        }
+        .nav-text-menu {
+          ul {
+            text-align: center;
+            li {
+              a {
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .container {
+      width: 95%;
+    }
+  }
+}
+/*====================== Large ==================*/
+@media (992px <= width <= 1200px) {
+  body {
+    nav {
+      .logo {
+        img {
+          width: 140px;
+          height: 180px;
+        }
+      }
+      .nav-text {
+        .nav-text-title {
+          h1 {
+            font-size: 2.7rem;
+          }
+        }
+        .nav-text-menu {
+          ul {
+            text-align: center;
+            li {
+              a {
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .container {
+      width: 95%;
+    }
+  }
+}
