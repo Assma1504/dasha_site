@@ -137,7 +137,6 @@ section.product-catalog {
     width: 100%;
 
     .item {
-      /* background-color: #fff; */
       position: relative;
       
       .title {
@@ -163,8 +162,6 @@ section.product-catalog {
       grid-area: 1 / 1 / 2 / 2;
     }
     .earrings {
-      /* grid-column: 1/2;
-      grid-row: 2/3; */
       grid-area: 2 / 1 / 3 / 2;
       background-image: url(../images/product-catalog-3.jpg);
       background-size: cover;
@@ -183,8 +180,6 @@ section.product-catalog {
       color: #000;
     }
     .brooches {
-      /* grid-column: 3/4;
-      grid-row: 1/2; */
       grid-area: 1 / 3 / 2 / 4;
        background-image: url(../images/product-catalog-4.jpg);
       background-size: cover;
@@ -405,11 +400,24 @@ section.section-earings {
             color: var(--white-color);
             position: absolute;
             top: 10%;
-            left: 10%;
             &.wings {
               top: 10%;
               left: 50%;
               transform: translateX(-50%);
+            }
+             &.box-five {
+              top: 10%;
+              left: 10%;
+            }
+            &.box-six {
+              right: 10% ;
+            } 
+            &.box-nine {
+              left: 10%;
+              color: var(--black-color)
+            }
+            &.moon{
+              left:10%
             }
           }
         }
@@ -565,11 +573,6 @@ section.section-earings {
             position: absolute;
             top: 10%;
             left: 10%;
-            &.wings {
-              top: 10%;
-              left: 50%;
-              transform: translateX(-50%);
-            }
           }
         }
       }
