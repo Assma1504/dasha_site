@@ -135,66 +135,62 @@ section.product-catalog {
     grid-template-rows: 1fr 1fr;
     gap: 45px;
     width: 100%;
-
     .item {
       position: relative;
-      
       .title {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translateX(-50%);
-        a{
+        a {
           text-decoration: none;
           color: var(--white-color);
-      font-size: var(--font-size-medium-text);
+          font-size: var(--font-size-medium-text);
         }
       }
-      
     }
-    .rings {
-      /* grid-column: 1/2;
+  }
+  .rings {
+    /* grid-column: 1/2;
       grid-row: 1/2; */
-      background-image: url(../images/product-catalog-1.jpg);
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      grid-area: 1 / 1 / 2 / 2;
-    }
-    .earrings {
-      grid-area: 2 / 1 / 3 / 2;
-      background-image: url(../images/product-catalog-3.jpg);
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-     
-    }
-    .main {
-       background-image: url(../images/product-catalog-5.jpg);
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      grid-area: 1 / 2 / 3 / 3;
-      /* grid-column: 2/3;
+    background-image: url(../images/product-catalog-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .earrings {
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(../images/product-catalog-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .main {
+    background-image: url(../images/product-catalog-5.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    grid-area: 1 / 2 / 3 / 3;
+    /* grid-column: 2/3;
       grid-row: 1 /2; */
-      color: #000;
-    }
-    .brooches {
-      grid-area: 1 / 3 / 2 / 4;
-       background-image: url(../images/product-catalog-4.jpg);
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-    }
-    .accessories {
-      /* grid-column: 3/4;
+    color: #000;
+  }
+  .brooches {
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url(../images/product-catalog-4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .accessories {
+    /* grid-column: 3/4;
       grid-row: 2/3; */
-      grid-area: 2 / 3 / 3 / 4;
-       background-image: url(../images/product-catalog-2.jpg);
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-    }
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url(../images/product-catalog-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 }
 .contact-info {
@@ -405,19 +401,19 @@ section.section-earings {
               left: 50%;
               transform: translateX(-50%);
             }
-             &.box-five {
+            &.box-five {
               top: 10%;
               left: 10%;
             }
             &.box-six {
-              right: 10% ;
-            } 
+              right: 10%;
+            }
             &.box-nine {
               left: 10%;
-              color: var(--black-color)
+              color: var(--black-color);
             }
-            &.moon{
-              left:10%
+            &.moon {
+              left: 10%;
             }
           }
         }
@@ -519,7 +515,7 @@ section.section-earings {
   .chain-section {
     margin-top: 4rem;
     .chain-image {
-      margin-bottom: 5rem ;
+      margin-bottom: 5rem;
       text-align: center;
       position: relative;
       img {
@@ -529,14 +525,13 @@ section.section-earings {
       h4.image-number {
         color: var(--white-color);
         font-size: var(--font-size-large-text);
-        font-family: var( --font-family-Kablammo);
+        font-family: var(--font-family-Kablammo);
         position: absolute;
         top: 30%;
-        left: 20%;        
-
+        left: 20%;
       }
     }
-     .earings-box {
+    .earings-box {
       margin-bottom: 5rem;
       .box-text {
         .text-title {
@@ -611,19 +606,21 @@ section.section-earings {
     .container {
       width: 90%;
       section.product-catalog {
+        font-size: var(--font-size-regular-text);
+        height: auto;
         .grid-gallery {
+          height: 100%;
           display: block;
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
           .item {
-            text-align: center;
-            margin-bottom: 2rem;
-            a {
-              img {
-                max-width: 85%;
-              }
-            }
+          height: 300px;
+          margin-bottom: 1rem;
           }
         }
       }
+
       section.products-on-the-module {
         .products-module-gallery {
           display: block;
