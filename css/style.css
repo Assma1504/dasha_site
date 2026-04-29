@@ -654,7 +654,11 @@ section.section-earings {
           display: block;
           .rings-box {
             width: 100%;
-            text-align: center;
+            .box-text {
+              .text-title{
+                text-align: center;
+              }
+            }
             .box-image {
               .image {
                 img {
